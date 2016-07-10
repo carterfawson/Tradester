@@ -1,0 +1,1 @@
+# This is the production code repo for both infrastructure and application code on the Tradester service. Included in this repo are Chef Cookbooks, Django Application Code, Fabric and Boto scripts for remote administration automation and deployment.
