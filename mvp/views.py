@@ -1,3 +1,13 @@
 from django.shortcuts import render
+from django.http import HttpRequest
+from django.template import RequestContext
 
-# Create your views here.
+def home(request):
+    assert isinstance(request, HttpRequest)
+
+    context = RequestContext(request)
+    return render(
+        request,
+        'mvp/Tradester.html',
+        context
+    )

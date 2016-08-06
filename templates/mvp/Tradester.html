@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,14 +12,14 @@
 
     <title>Tradester</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<link href="Tradester.css" rel="stylesheet">
+	<link href="{% static 'mvp/css/Tradester.css' %}" rel="stylesheet">
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
- 
+
   </head>
 
   <body>
 
-  
+
 	<nav class="navbar navbar-inverse navbar-top">
         <div class="container">
 
@@ -34,16 +35,16 @@
         </div>
     </nav>
 
-	
-	
-	<div class="bg" style="background-image: url('Images/tradester final logo.png')">
+
+
+	<div class="bg" style="background-image: url('{% static 'mvp/images/tradester final logo.png' %}')">
 	</div>
 
-  
-  	<div class="grayLogo" style="background-image: url('Images/grayLogoX.png')">
+
+  	<div class="grayLogo" style="background-image: url('{% static 'mvp/images/grayLogoX.png' %}')">
 		<div class="container">
 			<div class="panel panel-default">
-				<div class="panel-body">	
+				<div class="panel-body">
 					<div style="text-align:center;">
 						<h1>Submit A Task</h1>
 					</div>
@@ -90,25 +91,25 @@
 					</form>
 				</div>
 			</div>
-		</div>	
+		</div>
 	</div>
-	
+
 	<div class="bgWhite">
 		<div class="col-sm-10 col-sm-offset-1 ">
 			<div class="row">
 					<div style="text-align: center;">
 							<h2>What Is Tradester?</h2>
-							<img src="Images/sharpLine.png">
+							<img src="{% static 'mvp/images/sharpLine.png' %}">
 					</div>
-					<p class="firstLine">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+					<p class="firstLine">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 					incididunt ut labore et dolore magna aliqua. Ut enim ad minum veniam, quis nostrud exercitation
 					ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
 					in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-					 cupidatat non proident, sunt in culpa que officia deserunt mollit anum id est laborum.</p> 
+					 cupidatat non proident, sunt in culpa que officia deserunt mollit anum id est laborum.</p>
 			</div>
         </div>
 	</div>
-	
+
 	<div class="bgBlack">
 		<div class="col-sm-10 col-sm-offset-1 ">
 			<div class="row">
@@ -118,16 +119,16 @@
 				</div>
 			<div class="col-sm-4">
 				<div style="text-align: center;">
-					<img class="lesson" src="Images/lessons.png">
+					<img class="lesson" src="{% static 'mvp/images/lessons.png' %}">
 					<h3> Lessons <h3>
 				</div>
-					<p class="secondLine"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+					<p class="secondLine"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 					incididunt ut labore et dolore magna aliqua. Ut enim ad minum veniam, quis nostrud exercitation
 					ullamco laboris nisi ut aliquip ex ea commodo consequat.<p>
 			</div>
 			<div class="col-sm-4">
 				<div style="text-align: center;">
-					<img class="lesson" src="Images/lessons.png">
+					<img class="lesson" src="{% static 'mvp/images/lessons.png' %}">
 					<h3> Automotive <h3>
 				</div>
 					<p class="secondLine"> Duis aute irure dolor in reprehenderit
@@ -136,22 +137,22 @@
 			</div>
 			<div class="col-sm-4">
 				<div style="text-align: center;">
-					<img class="lesson" src="Images/lessons.png">
+					<img class="lesson" src="{% static 'mvp/images/lessons.png' %}">
 					<h3> Home Improvement <h3>
 				</div>
-					<p class="secondLine"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+					<p class="secondLine"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 					incididunt ut labore et dolore magna aliqua. Ut enim ad minum veniam, quis nostrud exercitation
 					ullamco laboris nisi ut aliquip ex ea commodo consequat.<p>
 			</div>
         </div>
 	</div>
 	</div>
-	
+
 	<div class="bgGray">
 		<div style="text-align: center;">
 			<p class="copyright"> 2016 Tradester Co. <p>
 		</div>
 	</div>
-  
+
   </body>
 </html>
