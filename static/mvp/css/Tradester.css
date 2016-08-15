@@ -20,7 +20,7 @@ h3{
 
 h2.h2White{
 	color:#C4C3C3;
-	
+
 }
 
 hr.customSmall {
@@ -33,18 +33,18 @@ hr.customSmall {
 	width: 50%;
 	height: auto;
  }
- 
+
  p.copyright{
 	display:inline-block;
 	margin-top:50px;
 	font-size: 25px;
 	color: #C4C3C3;
  }
- 
+
  .fa{
 	 margin-top:-15px;
  }
- 
+
 .firstLine{
 	margin-top: 50px;
 	font-size: 30px;
@@ -59,7 +59,7 @@ hr.customSmall {
 
 .navbar{
 	background-color: black;
-	height: 70px;	
+	height: 70px;
 }
 .bg{
 	background: no-repeat center center;
@@ -74,22 +74,21 @@ hr.customSmall {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: 10%;
-	height: 95vh;
 }
 
 .bgWhite{
 	background-color:white;
-	height: 100vh;
+	/*height: 100vh;*/
 }
 
 .bgBlack{
 	background-color:#090909;
-	height:130vh;
+	/*height:130vh;*/
 }
 
 .bgGray{
 	background-color:gray;
-	height: 15vh;
+	/*height: 15vh;*/
 }
 
 
@@ -99,4 +98,5 @@ hr.customSmall {
 
 .panel{
 	margin-top:10%;
+	margin-bottom: 10%;
 }
