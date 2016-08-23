@@ -1,3 +1,5 @@
+
+
 a{
 	float:right;
 	font-size:25px;
@@ -5,7 +7,7 @@ a{
 }
 
 h2{
-	margin-top: 160px;
+	margin-top: 60px;
 	font-size: 65px;
 	color: black;
 	font-weight: 900;
@@ -99,4 +101,10 @@ hr.customSmall {
 .panel{
 	margin-top:10%;
 	margin-bottom: 10%;
+}
+
+.main-logo{
+	margin-top: 10%;
+	width: 50%;
+	height: auto;
 }

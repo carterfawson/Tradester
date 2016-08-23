@@ -18,27 +18,8 @@
   </head>
 
   <body>
-
-
-	<nav class="navbar navbar-inverse navbar-top">
-        <div class="container">
-
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#">Find us on Facebook</a>
-                    </li>
-					<li>
-						<a href="#"><i class="fa fa-facebook-square" style="font-size:48px"></i></a>
-					</li>
-                </ul>
-
-        </div>
-    </nav>
-
-
-
-	<div class="bg" style="background-image: url('{% static 'mvp/images/tradester final logo.png' %}')">
-	</div>
+	<!--<div class="bg" style="background-image: url('{% static 'mvp/images/tradester final logo.png' %}')">
+	</div>-->
 
 
   	<div class="grayLogo" style="background-image: url('{% static 'mvp/images/grayLogoX.PNG' %}')">
@@ -47,71 +28,40 @@
 				<div class="panel-body">
 					<div style="text-align:center;">
 						<h1>Submit A Task</h1>
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Submit a Task</button>
+
+            <!-- Modal -->
+            <div id="myModal" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Task Form</h4>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+          						<!-- Put the task request form here -->
+          					</form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
             <!--I can just make this a model form from Django. That way I can use Celery to do some processing related to the form-->
 					</div>
-					<form>
-						<div class="form-group row">
-						  <label for="firstName" class="col-sm-2 col-form-label">First Name</label>
-						  <div class="col-sm-10">
-							<input class="form-control" type="text" placeholder="First Name" id="firstName">
-						  </div>
-						</div>
-						<div class="form-group row">
-						  <label for="lastname" class="col-sm-2 col-form-label">Last Name</label>
-						  <div class="col-sm-10">
-							<input class="form-control" type="text" placeholder="Last Name" id="lastName">
-						  </div>
-						</div>
-						<div class="form-group row">
-						  <label for="email" class="col-sm-2 col-form-label">E-Mail</label>
-						  <div class="col-sm-10">
-							<input class="form-control" type="text" placeholder="E-Mail" id="Email">
-						  </div>
-						</div>
-						<div class="form-group row">
-						  <label for="phoneNumber" class="col-sm-2 col-form-label">Phone Number</label>
-						  <div class="col-sm-10">
-							<input class="form-control" type="number" id="phoneNumber" placeholder="Phone Number">
-						  </div>
-						</div>
-						<div class="form-group row">
-						  <label for="service" class="col-sm-2 col-form-label">Services Needed</label>
-						  <div class="col-sm-10">
-							<input class="form-control" type="text" placeholder="Services Needed" id="servicesNeeded">
-						  </div>
-						</div>
-						<div class="form-group row">
-							<label class="col-sm-2 col-form-label" for="details">Details</label>
-							<div class="col-sm-10">
-								<textarea class="form-control" type="text" cols="40" placeholder="Details" id="details" name="details" rows="10"></textarea>
-							</div>
-						</div>
-						<div class="form-group">
-								<button class="btn btn-success pull-right col-sm-2" name="submit" type="submit">Submit</button>
-						</div>
-					</form>
+
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="bgWhite container">
-		<div class="row">
-			<div class="col-sm-10 col-sm-offset-1">
-					<div style="text-align: center;">
-							<h2>What Is Tradester?</h2>
-							<img src="{% static 'mvp/images/sharpLine.PNG' %}">
-					</div>
-					<p class="firstLine">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-					incididunt ut labore et dolore magna aliqua. Ut enim ad minum veniam, quis nostrud exercitation
-					ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-					in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-					 cupidatat non proident, sunt in culpa que officia deserunt mollit anum id est laborum.</p>
-			</div>
-        </div>
-	</div>
-
-	<div class="bgBlack container">
+  <div class="bgBlack">
 		<div class="row">
 			<div class="col-sm-10 col-sm-offset-1">
 				<div style="text-align: center;">
@@ -151,11 +101,29 @@
 	</div>
 	</div>
 
+	<div class="bgWhite container">
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-1">
+					<div style="text-align: center;">
+              <img class="main-logo" src="{% static 'mvp/images/tradester final logo.png' %}">
+							<img src="{% static 'mvp/images/sharpLine.PNG' %}">
+					</div>
+					<p class="firstLine">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minum veniam, quis nostrud exercitation
+					ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+					in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+					 cupidatat non proident, sunt in culpa que officia deserunt mollit anum id est laborum.</p>
+			</div>
+    </div>
+	</div>
+
+<a href="#"><i class="fa fa-facebook-square" style="font-size:48px"></i></a>
 	<div class="bgGray">
 		<div style="text-align: center;">
 			<p class="copyright"> 2016 Tradester Co. <p>
 		</div>
 	</div>
-
+  <script src="{% static 'bootstrap/js/jquery.js' %}"></script>
+  <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
   </body>
 </html>
