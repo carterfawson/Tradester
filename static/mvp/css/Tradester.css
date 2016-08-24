@@ -6,23 +6,14 @@ a{
 	margin-top:10px
 }
 
-h2{
-	margin-top: 60px;
-	font-size: 65px;
-	color: black;
-	font-weight: 900;
+.cat-head {
+	font-size:70px;
+	color:red;
 }
 
-h3{
-	margin-top: 50px;
-	font-size: 50px;
-	color: #C4C3C3;
-	font-weight: 700;
-}
-
-h2.h2White{
-	color:#C4C3C3;
-
+.cat-subhead {
+	font-size:50px;
+	color:red;
 }
 
 hr.customSmall {
@@ -94,8 +85,8 @@ hr.customSmall {
 }
 
 
-.form-group{
-	margin-top:10px;
+.task-form{
+	height: 400px;
 }
 
 .panel{
@@ -105,6 +96,20 @@ hr.customSmall {
 
 .main-logo{
 	margin-top: 10%;
+	margin-bottom: 10%;
 	width: 50%;
 	height: auto;
+}
+
+.bar_logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+		width: 50%;
+		height: auto;
+		margin-top:10%;
+}
+
+.jumbotron-content {
+	text-align: center;
 }
