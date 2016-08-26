@@ -22,12 +22,17 @@
 	</div>-->
 
   <div class="bgWhite container">
-    <div class="row">
-      <div class="col-sm-10 col-sm-offset-1">
-          <div style="text-align: center;">
-              <img class="main-logo" src="{% static 'mvp/images/tradester final logo.png' %}">
-          </div>
+    <div class="row test">
+      <div class="col-sm-6">
+        <img class="main-logo" src="{% static 'mvp/images/tradester final logo.png' %}">
       </div>
+      <div class="col-sm-6">
+        <div class="vision-text">
+          <h1>Our Vision</h1>
+          <p>To blah blah blah blah blah.</p>
+        </div>
+      </div>
+    </div>
     </div>
   </div>
   	<div class="grayLogo" style="background-image: url('{% static 'mvp/images/grayLogoX.PNG' %}')">
@@ -35,7 +40,7 @@
             <div class="jumbotron-content">
               <h3>Whatever it is you need, we're here to help.<br>We figure out the details so that you don't have to</h3>
               <!-- Trigger the modal with a button -->
-              <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Submit a Task</button>
+              <button type="button" class="btn btn-info btn-lg btn-task" data-toggle="modal" data-target="#myModal"><p class="task-submit">Submit a Task</p></button>
             </div>
             <!-- Modal -->
             <div id="myModal" class="modal fade" role="dialog">
@@ -49,11 +54,12 @@
                   </div>
                   <div class="modal-body">
                     <form>
-          						<!-- Put the task request form here -->
+          						{{ form.as_p }}<!-- Put the task request form here -->
           					</form>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
                   </div>
                 </div>
 
@@ -64,14 +70,12 @@
 </div>
 
   <div class="bgBlack">
-		<div class="row">
-			<div class="col-sm-10 col-sm-offset-1">
 				<div style="text-align: center;">
 					<h2 class="cat-head">Categories</h2>
 					<hr class="customSmall">
 				</div>
       <div class="row">
-			<div class="col-sm-4">
+			<div class="col-md-4">
 				<div style="text-align: center;">
 					<img class="lesson" src="{% static 'mvp/images/lessons.PNG' %}">
 					<h3 class="cat-subhead"> Lessons <h3>
@@ -80,7 +84,7 @@
 					incididunt ut labore et dolore magna aliqua. Ut enim ad minum veniam, quis nostrud exercitation
 					ullamco laboris nisi ut aliquip ex ea commodo consequat.<p>
 			</div>
-			<div class="col-sm-4">
+			<div class="col-md-4">
 				<div style="text-align: center;">
 					<img class="lesson" src="{% static 'mvp/images/lessons.PNG' %}">
 					<h3 class="cat-subhead"> Automotive <h3>
@@ -89,7 +93,7 @@
 					in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
 					 cupidatat non proident, sunt in culpa que officia deserunt mollit anum id est laborum.<p>
 			</div>
-			<div class="col-sm-4">
+			<div class="col-md-4">
 				<div style="text-align: center;">
 					<img class="lesson" src="{% static 'mvp/images/lessons.PNG' %}">
 					<h3 class="cat-subhead"> Home <h3>
@@ -97,24 +101,6 @@
 					<p class="secondLine"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 					incididunt ut labore et dolore magna aliqua. Ut enim ad minum veniam, quis nostrud exercitation
 					ullamco laboris nisi ut aliquip ex ea commodo consequat.<p>
-			</div>
-    </div>
-        </div>
-	</div>
-	</div>
-
-	<div class="bgWhite container">
-		<div class="row">
-			<div class="col-sm-10 col-sm-offset-1">
-					<div style="text-align: center;">
-              <h1>What we are About</h1>
-							<img src="{% static 'mvp/images/sharpLine.PNG' %}">
-					</div>
-					<p class="firstLine">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-					incididunt ut labore et dolore magna aliqua. Ut enim ad minum veniam, quis nostrud exercitation
-					ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-					in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-					 cupidatat non proident, sunt in culpa que officia deserunt mollit anum id est laborum.</p>
 			</div>
     </div>
 	</div>

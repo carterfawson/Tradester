@@ -6,7 +6,12 @@ a{
 	margin-top:10px
 }
 
+.task-submit {
+	font-size:40px;
+}
+
 .cat-head {
+	margin-top: 0;
 	font-size:70px;
 	color:red;
 }
@@ -97,8 +102,16 @@ hr.customSmall {
 .main-logo{
 	margin-top: 10%;
 	margin-bottom: 10%;
-	width: 50%;
+	width: 80%;
 	height: auto;
+}
+
+.test{
+	text-align: center;
+}
+
+.vision-text {
+	margin-top: 10%;
 }
 
 .bar_logo {
@@ -112,4 +125,10 @@ hr.customSmall {
 
 .jumbotron-content {
 	text-align: center;
+}
+
+.btn-task{
+	width:50%;
+	padding-top:30px;
+	padding-bottom:30px;
 }
